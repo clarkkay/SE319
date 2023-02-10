@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/navbar-fixed/">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Recipes</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .card-img-top {
+      width: 350px;
+      height: 400px;
+    }
+
+    form {
+      margin: 0 auto;
+      width: 250px
+    }
+  </style>
+</head>
+<body>
+  <!-- Section designed for the navbar at the top of the screen -->
+  <section>
+    <header class="p-3 bg-dark text-white">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <img src="https://clipground.com/images/pillsbury-dough-boy-clipart-2.jpg" width="50px" height="50px"
+              alt="templogo">
+          </a>
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="index.html" class="nav-link px-2 text-secondary">Home</a></li>
+            <li><a href="recipes.html" class="nav-link px-2 text-white">Recipes</a></li>
+          </ul>
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2">Login</button>
+            <button type="button" class="btn btn-warning">Sign-up</button>
+          </div>
+        </div>
+      </div>
+    </header>
+  </section>
+  <!--Honey Garlic Chicken Album-->
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <img class="card-img-top"
+            src="https://www.familyfoodonthetable.com/wp-content/uploads/2016/09/15-minute-honey-garlic-chicken-4.jpg"
+            alt="Honey Garlic Chicken">
+          <div class="card-">
+            <p class="card-text">Honey Garlic Chicken</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                    href="https://www.familyfoodonthetable.com/15-minute-honey-garlic-chicken/">View</a></button>
+                <!--Ingredient Button-->
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#HGCIng"
+                  aria-expanded="false" aria-controls="HGCIng">Ingredient List
+                </button>
+                <!--Ingredients for Honey Garlic Chicken-->
+                <div class="collapse" id="HGCIng">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card card-body">
+                        <section>
+                          <div class="d-flex justify-content-medium-start">
+                            <label class="list-group-item d-flex gap-2">
+                              <input class="form-check-input flex-shrink-0" type="checkbox" value="" checked>
+                              <span>
+                                2 Teaspoons Olive Oil
+                              </span>
+                            </label>
+                            <label class="list-group-item d-flex gap-2">
+                              <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                              <span>
+                                1 1/2 lbs Boneless Chicken Breasts
+                              </span>
+                            </label>
+                            <label class="list-group-item d-flex gap-2">
+                              <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                              <span>
+                                3tbs Honey
+                              </span>
+                            </label>
+                            <label class="list-group-item d-flex gap-2">
+                              <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                              <span>
+                                3tbs Soy Sauce
+                              </span>
+                            </label>
+                            <label class="list-group-item d-flex gap-2">
+                              <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                              <span>
+                                3 Cloves Garlic
+                              </span>
+                            </label>
+                            <label class="list-group-item d-flex gap-2">
+                              <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                              <span>
+                                1/4tbs Red Pepper Flakes
+                              </span>
+                            </label>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Grilled Cheese-->
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top"
+                src="https://assets.bonappetit.com/photos/57acf62a53e63daf11a4dbee/1:1/w_1920,c_limit/best-ever-grilled-cheese.jpg"
+                alt="grilled cheese">
+              <div class="card-body">
+                <p class="card-text">Immaculate grilled cheese recipe. Made for the gods; not fit for human consumption
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                        href="https://www.bonappetit.com/recipe/best-ever-grilled-cheese">View</a></button>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#CHIng"
+                      aria-expanded="false" aria-controls="CHIng">Ingredient List
+                    </button>
+                    <!--Grilled Cheese ingredients-->
+                <div class="collapse" id="CHIng">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card card-body">
+                        <section>
+                          <div class="d-flex justify-content-medium-start">
+                            <label class="list-group-item d-flex gap-2">
+                              <input class="form-check-input flex-shrink-0" type="checkbox" value="" checked>
+                              <span>
+                                2 Pieces of Bread
+                              </span>
+                            </label>
+                            <label class="list-group-item d-flex gap-2">
+                              <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                              <span>
+                                2 Mayonnaise
+                              </span>
+                            </label>
+                            <label class="list-group-item d-flex gap-2">
+                              <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                              <span>
+                                1tb Butter
+                              </span>
+                            </label>
+                            <label class="list-group-item d-flex gap-2">
+                              <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                              <span>
+                                2 Slices American
+                              </span>
+                            </label>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Chicken Curry Recipe-->
+          
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top"
+                src="https://thefoodcharlatan.com/wp-content/uploads/2022/01/Easy-Chicken-Curry-Recipe-30-Minutes-26-768x1152.jpg"
+                alt="curry karen">
+              <div class="card-body">
+                <p class="card-text">Chicken Curry</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                        href="https://thefoodcharlatan.com/easy-chicken-curry-recipe/"> View</a></button>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#CCIng"
+                      aria-expanded="false" aria-controls="CCIng">Ingredient List
+                    </button>
+                    <!--Chicken Curry Ingredients-->
+                <div class="collapse" id="CCIng">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card card-body">
+                        <section>
+                          <div class="d-flex justify-content-medium-start">
+                            <label class="list-group-item d-flex gap-2">
+                              <input class="form-check-input flex-shrink-0" type="checkbox" value="" checked>
+                              <span>
+                                Yello Curry Powder
+                              </span>
+                            </label>
+                            <label class="list-group-item d-flex gap-2">
+                              <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                              <span>
+                                Garam Masala
+                              </span>
+                            </label>
+                            <label class="list-group-item d-flex gap-2">
+                              <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                              <span>
+                                Chicken Breast
+                              </span>
+                            </label>
+                            <label class="list-group-item d-flex gap-2">
+                              <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                              <span>
+                                Coconut Milk
+                              </span>
+                            </label>
+                            <label class="list-group-item d-flex gap-2">
+                              <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                              <span>
+                                Onion
+                              </span>
+                            </label>
+                            <label class="list-group-item d-flex gap-2">
+                              <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                              <span>
+                                Jalapeno
+                              </span>
+                            </label>
+                            <label class="list-group-item d-flex gap-2">
+                              <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                              <span>
+                                Garlic
+                              </span>
+                            </label>
+                            <label class="list-group-item d-flex gap-2">
+                              <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                              <span>
+                                Chicken Broth
+                              </span>
+                            </label>
+                            <label class="list-group-item d-flex gap-2">
+                              <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                              <span>
+                                Cilantro
+                              </span>
+                            </label>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Alvacado Toast-->
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <img class="card-img-top"
+                src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2015/12/11/0/FNK_All-the-Avocado-Toast_s4x3.jpg.rend.hgtvcom.826.620.suffix/1450059496131.jpeg"
+                alt="avo toast">
+              <div class="card-body">
+                <p class="card-text">Avacado Toast</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                        href="https://www.foodnetwork.com/recipes/food-network-kitchen/avocado-toasts-3364588">View</a></button>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ATIng"
+                      aria-expanded="false" aria-controls="ATIng">Ingredient List
+                    </button>
+                  <!--Ingredients for Alvacado Toast-->
+                <div class="collapse" id="ATIng">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card card-body">
+                        <section>
+                          <div class="d-flex justify-content-medium-start">
+                            <label class="list-group-item d-flex gap-2">
+                              <input class="form-check-input flex-shrink-0" type="checkbox" value="" checked>
+                              <span>
+                                2 Pieces of Bread
+                              </span>
+                            </label>
+                            <label class="list-group-item d-flex gap-2">
+                              <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                              <span>
+                                1 Avacado
+                              </span>
+                            </label>
+                          </div>
+                      </div>
+                    </div>
+                    <!--Chicken Quesadilla-->
+                    <div class="col-md-4">
+                      <div class="card mb-4 box-shadow">
+                        <img class="card-img-top"
+                          src="https://www.simplyrecipes.com/thmb/KsdFx05wJQPYQPddE22ejAkXOc4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Simply-Recipes-Quesadilla-LEAD-5-55da42a2a306497c85b1328385e44d85.jpg"
+                          alt="quesadilla">
+                        <div class="card-body">
+                          <p class="card-text">Chicken Quesadilla</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                                  href="https://www.simplyrecipes.com/recipes/quesadilla/">View</a></button>
+                              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#CQIng"
+                                aria-expanded="false" aria-controls="CQIng">Ingredient List
+                              </button>
+                            <!--Chicken Quesadilla Ingredients-->
+                          <div class="collapse" id="CQIng">
+                            <div class="row">
+                              <div class="col-md-4">
+                                <div class="card card-body">
+                                  <section>
+                                    <div class="d-flex justify-content-medium-start">
+                                      <label class="list-group-item d-flex gap-2">
+                                        <input class="form-check-input flex-shrink-0" type="checkbox" value="" checked>
+                                        <span>
+                                         4 Large flour tortillas 
+                                        </span>
+                                      </label>
+                                      <label class="list-group-item d-flex gap-2">
+                                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                                        <span>
+                                          Grated Cheese
+                                        </span>
+                                      </label>
+                                      <label class="list-group-item d-flex gap-2">
+                                        <input class="form-check-input flex-shrink-0" type="checkbox" value="">
+                                        <span>
+                                          Olive Oil
+                                        </span>
+                                      </label>
+                                    </div>
+                                </div>
+                              </div>
+                              <!--Tuna Salad-->
+                              <div class="col-md-4">
+                                <div class="card mb-4 box-shadow">
+                                  <img class="card-img-top"
+                                    src="https://imgs.search.brave.com/xXwfG3jq7jWIqVZUFsvaa4Ca_QrEqMy9JyZY3NrPr3w/rs:fit:316:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5i/RmNXenRydFBSeFZX/TVBiUGF2c3BBSGFM/SCZwaWQ9QXBp"
+                                    alt="rose">
+                                  <div class="card-body">
+                                    <p class="card-text">Tuna Salad</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"><a
+                                            href="https://youtu.be/XmUBTpA68F0">View</a></button>
+                                        <button class="btn btn-primary" type="button" data-toggle="collapse"
+                                          data-target="#TSIng" aria-expanded="false" aria-controls="TSIng">Ingredient
+                                          List
+                                        </button>
+                                      <!--Tuna Salad Ingredients-->
+                                    <div class="collapse" id="TSIng">
+                                      <div class="row">
+                                        <div class="col-md-4">
+                                          <div class="card card-body">
+                                            <section>
+                                              <div class="d-flex justify-content-medium-start">
+                                                <label class="list-group-item d-flex gap-2">
+                                                  <input class="form-check-input flex-shrink-0" type="checkbox" value=""
+                                                    checked>
+                                                  <span>
+                                                    2oz Tuna
+                                                  </span>
+                                                </label>
+                                                <label class="list-group-item d-flex gap-2">
+                                                  <input class="form-check-input flex-shrink-0" type="checkbox"
+                                                    value="">
+                                                  <span>
+                                                    1/4 cup Mayonnaise
+                                                  </span>
+                                                </label>
+                                                <label class="list-group-item d-flex gap-2">
+                                                  <input class="form-check-input flex-shrink-0" type="checkbox"
+                                                    value="">
+                                                  <span>
+                                                    1 stalk Celery Mayonnaise
+                                                  </span>
+                                                </label>
+                                                <label class="list-group-item d-flex gap-2">
+                                                  <input class="form-check-input flex-shrink-0" type="checkbox"
+                                                    value="">
+                                                  <span>
+                                                    2tbs Red Onion
+                                                  </span>
+                                                </label>
+                                                <label class="list-group-item d-flex gap-2">
+                                                  <input class="form-check-input flex-shrink-0" type="checkbox"
+                                                    value="">
+                                                  <span>
+                                                   2tbs Parsley
+                                                  </span>
+                                                </label>
+                                                <label class="list-group-item d-flex gap-2">
+                                                  <input class="form-check-input flex-shrink-0" type="checkbox"
+                                                    value="">
+                                                  <span>
+                                                    1/2tbs Dijon Mustard
+                                                  </span>
+                                                </label>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!--Text area for adding new recipes-->
+                                  <form action="recipes.html" target="_blank" method="GET">
+                                    <p>
+                                      <label for="first">Recipe Name:</label>
+                                      <input type="text" id="first" name="first" placeholder="Text box">
+                                    </p>
+                                    <p>
+                                      <label for="address">Ingridents & Recipe:</label>
+                                      <textarea id="address" name="address"
+                                        placeholder="Text area with 2 rows and 20 cols" rows="2" cols="20"></textarea>
+                                    </p>
+                                    <p>
+                                      <input type="submit" value="Submit">
+                                    </p>
+                                  </form>
+                                  </main>
+                                  <script
+                                    src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                                  <script
+                                    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

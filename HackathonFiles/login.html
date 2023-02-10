@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>Login</h2>
+      <form>
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" class="form-control" id="username">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd">
+        </div>
+        <button id="login-btn" type="button" class="btn btn-primary">Submit</button>
+      </form>
+      <div class="col-md-10 mx-auto col-lg-5">
+        <form class="p-4 p-md-5 border rounded-3 bg-light">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" fdprocessedid="t1kupq">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" fdprocessedid="eqkm57">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+          <button class="w-100 btn btn-lg btn-primary" type="submit" fdprocessedid="bvfmx7">Sign up</button>
+          <hr class="my-4">
+          <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      const loginBtn = document.getElementById("login-btn");
+      const username = document.getElementById("username");
+      const password = document.getElementById("pwd");
+  
+      function validateLogin() {
+        const enteredUsername = username.value;
+        const enteredPassword = password.value;
+  
+        if (enteredUsername === "admin" && enteredPassword === "password") {
+          alert("Login successful!");
+        } else {
+          alert("Login failed. Please check your username and password.");
+        }
+      }
+  
+      loginBtn.addEventListener("click", validateLogin);
+    </script>
+  </body>
+</html>
